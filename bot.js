@@ -12,13 +12,13 @@ client.on("ready", () => {
  
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
  
-  client.user.setGame(`on ${client.guilds.size} servers`);
+  client.user.setGame(` ${client.guilds.size} sv ye bulasti`);
 });
 
 client.on("guildCreate", guild => {
   
   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
-  client.user.setGame(`By Vaqum +help`);
+  client.user.setGame(`++help`);
 });
 
 client.on("guildDelete", guild => {

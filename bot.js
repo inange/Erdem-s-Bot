@@ -7,7 +7,6 @@ const client = new Discord.Client();
  
 const config = require("./config.json");
 
-client.login(process.env.BOT_TOKEN)
 
 client.on("ready", () => {
  
@@ -180,4 +179,4 @@ client.on("message", async message => {
   }
 });
 
-client.login(config.token);
+client.login(process.env.BOT_TOKEN);

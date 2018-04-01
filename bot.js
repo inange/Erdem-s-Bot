@@ -124,23 +124,23 @@ client.on("message", async message => {
   
   
   if(command === "kick") {
-    if(!message.member.roles.some(r=>["Administrator", "Moderator"].includes(r.name)) )
-      return message.reply("Sorry, you don't have permissions to use this!");
+    if(!message.member.roles.some(r=>["Sunucu", "Ekibi", "Kurucu", "Yetkilisi", "Sorumlusu"].includes(r.name)) )
+      return message.reply("Yetkin yok veled!");
     let member = message.mentions.members.first();
     if(!member)
-      return message.reply("Please mention a valid member of this server");
+      return message.reply("Böyle biri yok!");
     if(!member.kickable) 
-      return message.reply("I cannot kick this user! Do they have a higher role? Do I have kick permissions?");
+      return message.reply("Atamıyorum Benim yetkim mi yok yoksa onların yetkisi benden yüksekmi ?");
     
    
     let reason = args.slice(1).join(' ');
     if(!reason)
-      return message.reply("Please indicate a reason for the kick!");
+      return message.reply("Bir Sebebp belirtin");
     
     
     await member.kick(reason)
-      .catch(error => message.reply(`Sorry ${message.author} I couldn't kick because of : ${error}`));
-    message.reply(`${member.user.tag} has been kicked by ${message.author.tag} because: ${reason}`);
+      .catch(error => message.reply(`üzgünüm ${message.author} kickleyemiyorum : ${error}`));
+    message.reply(`${member.user.tag} , ${message.author.tag} tarafından kicklendi .sebep: ${reason}`);
 
   }
   

@@ -164,7 +164,7 @@ client.on("message", async message => {
     message.reply(`${member.user.tag} has been banned by ${message.author.tag} because: ${reason}`);
   }
   
-  if(command === "chatitemizle") {
+  if(command === "chattemizle") {
     
     const deleteCount = parseInt(args[0], 10);
     

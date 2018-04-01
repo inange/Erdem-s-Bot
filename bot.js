@@ -200,9 +200,16 @@ client.on("message", async message => {
   }
   
   if(command === "ct") {
+    
+    
+    
     const deleteCount = parseInt(args[0], 10);
+    
+   
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)
       return message.reply("2 ile 100 arası bir sayı gir !");
+    
+   
     const fetched = await message.channel.fetchMessages({count: deleteCount});
     message.channel.bulkDelete(fetched)
       .catch(error => message.reply(`Hata : ${error}`));

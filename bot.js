@@ -57,6 +57,11 @@ client.on("message", async message => {
   if(command === "06vaqumxd") {
   message.channel.send("Bu Bot Erdem için Vaqum Tarafından yazılmıştır");
   message.channel.send("Erdem Ödemeyi Lahmacun ile yapmıştır");
+  const a = await message.channel.send("bu mesaj kendini imha edecek 3")
+  a.edit("bu mesaj kendini imha edecek 2")
+  a.edit("bu mesaj kendini imha edecek 1")
+  message.channel.bulkDelete(5)
+  
   }
   if(command === "erdem") {
   message.channel.send("<------------------------------------------>");

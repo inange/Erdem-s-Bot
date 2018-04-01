@@ -93,23 +93,24 @@ client.on("message", async message => {
   }
  if(command === "ahla") { 
     const m = await message.channel.send("Ah");
+    const n = await message.channel.send("aH");
     m.edit("AH");
-    m.edit("aH");
+    n.edit("aH");
     m.edit("ah");
-    m.edit("Ah");
+    n.edit("Ah");
     m.edit("AH");
-    m.edit("aH");
+    n.edit("aH");
     m.edit("AH");
     m.edit("aHHHHHHHH");
-    m.edit("ah");
+    n.edit("ah");
     m.edit("OHH");
-    m.edit("OHHHHHHH");
+    n.edit("OHHHHHHH");
     m.edit("aH");
     m.edit("OhOhOhOhOhOHOHHO");
-    m.edit("aH");
+    n.edit("aH");
     m.edit("ah");
     m.edit("Ah");
-    m.edit("AH");
+    n.edit("AH");
     m.edit("HOHOHOHOHO");
   
   }

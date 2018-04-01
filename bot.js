@@ -138,37 +138,16 @@ client.on("message", async message => {
   
   }
     if(command === "erdem") { 
-    const m = await message.channel.send("Kodumun sakatı");
-    m.edit("Kodumun sakatı +1");
-    m.edit("Kodumun sakatı +2");
-    m.edit("Kodumun sakatı +3");
-    m.edit("Kodumun sakatı +4");
-    m.edit("Kodumun sakatı +5");
-    m.edit("Kodumun sakatı +6");
-    m.edit("Kodumun sakatı +7");
-    m.edit("Kodumun sakatı +8");
-    m.edit("Kodumun sakatı +9");
-    m.edit("Kodumun sakatı +10");
-    m.edit("Kodumun sakatı +11");
-    m.edit("Kodumun sakatı +12");
-    m.edit("Kodumun sakatı +13");
-    m.edit("Kodumun sakatı +15");
-    m.edit("Kodumun sakatı +16");
-    m.edit("Kodumun sakatı +17");
-    m.edit("Kodumun sakatı +18");
-    m.edit("Kodumun sakatı +19");
-    m.edit("Kodumun sakatı +20");
-    m.edit("Kodumun sakatı +21");
-    m.edit("Kodumun sakatı +22");
-    m.edit("Kodumun sakatı +23");
-    m.edit("Kodumun sakatı +24");
-    m.edit("Kodumun sakatı +25");
-    m.edit("Kodumun sakatı +26");
-    m.edit("Kodumun sakatı +27");
-    m.edit("Kodumun sakatı +28");
-    m.edit("Kodumun sakatı +29");
-    m.edit("Kodumun sakatı +30");
-    m.edit("Kodumun sakatı +31");
+    const m = await message.channel.send(":regional_indicator_s:");
+    m.edit(":regional_indicator_s: :regional_indicator_a:");
+    m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k:");
+    m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a:");
+    m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:");
+    m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:       :regional_indicator_e:");
+    m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:       :regional_indicator_e: :regional_indicator_r:");
+    m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:       :regional_indicator_e: :regional_indicator_r: :regional_indicator_d:");
+    m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:       :regional_indicator_e: :regional_indicator_r: :regional_indicator_d: :regional_indicator_e:");
+    m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:       :regional_indicator_e: :regional_indicator_r: :regional_indicator_d: :regional_indicator_e: :regional_indicator_m:");
     }
     if(command === "dank") { 
     message.channel.send("https://i.hizliresim.com/Z9Bqmg.png");

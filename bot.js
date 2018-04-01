@@ -62,13 +62,13 @@ client.on("message", async message => {
   message.channel.send("                                         ");
   message.channel.send("--------------------------------------------");
   }
-  
    if(command === "soyle") {
-    
+    // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
+    // To get the "message" itself we join the `args` back into a string with spaces: 
     const sayMessage = args.join(" ");
-  
+    // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
     message.delete().catch(O_o=>{}); 
-   
+    // And we get the bot to say the thing: 
     message.channel.send(sayMessage);
   }
   if(command === "sevap") { 
@@ -199,17 +199,17 @@ client.on("message", async message => {
     message.reply(`${member.user.tag} has been banned by ${message.author.tag} because: ${reason}`);
   }
   
-  if(command === "ct") {
+if(command === "ct") {
+    // This command removes all messages from all users in the channel, up to 100.
     
-    
-    
+    // get the delete count, as an actual number.
     const deleteCount = parseInt(args[0], 10);
     
-   
+    // Ooooh nice, combined conditions. <3
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)
       return message.reply("2 ile 100 arası bir sayı gir !");
     
-   
+    // So we get our messages, and delete them. Simple enough, right?
     const fetched = await message.channel.fetchMessages({count: deleteCount});
     message.channel.bulkDelete(fetched)
       .catch(error => message.reply(`Hata : ${error}`));

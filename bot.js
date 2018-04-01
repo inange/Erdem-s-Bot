@@ -91,6 +91,16 @@ client.on("message", async message => {
     m.edit("opening semavats doors please standby.");
     m.edit("Can't Connect To Allah PLEASE TRY AGAIN");
   }
+ if(command === "ahla") { 
+    const m = await message.channel.send("Ah");
+    m.edit("AH");
+    m.edit("aH");
+    m.edit("ah");
+    m.edit("Ah");
+    m.edit("AH");
+    m.edit("aH");
+  
+  }
     if(command === "erdem") { 
     const m = await message.channel.send("Kodumun sakatı");
     m.edit("Kodumun sakatı +1");

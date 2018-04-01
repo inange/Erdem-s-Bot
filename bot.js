@@ -38,7 +38,7 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +-/g);
   const command = args.shift().toLowerCase();
   
-  // Let's go with a few common example commands! Feel free to delete or change those.
+
   
   if(command === "ping") {
     
@@ -92,26 +92,49 @@ client.on("message", async message => {
     m.edit("Can't Connect To Allah PLEASE TRY AGAIN");
   }
  if(command === "ahla") { 
-    const m = await message.channel.send("Ah");
-    const n = await message.channel.send("aH");
+  const m = await message.channel.send("Ah");
+  const n = await message.channel.send("aH");
+  const o = await message.channel.send("aH");
+  const p = await message.channel.send("aH");
+  const r = await message.channel.send("aH");
+  const s = await message.channel.send("aH");
+  const t = await message.channel.send("aH");
     m.edit("AH");
     n.edit("aH");
     m.edit("ah");
     n.edit("Ah");
-    m.edit("AH");
+    o.edit("AH");
     n.edit("aH");
     m.edit("AH");
-    m.edit("aHHHHHHHH");
+    p.edit("aHHHHHHHH");
     n.edit("ah");
     m.edit("OHH");
     n.edit("OHHHHHHH");
-    m.edit("aH");
+    s.edit("aH");
     m.edit("OhOhOhOhOhOHOHHO");
     n.edit("aH");
-    m.edit("ah");
+    r.edit("ah");
     m.edit("Ah");
     n.edit("AH");
-    m.edit("HOHOHOHOHO");
+    t.edit("HOHOHOHOHO");
+    o.edit("AH");
+    s.edit("aH");
+    m.edit("ah");
+    n.edit("Ah");
+    o.edit("AH");
+    p.edit("aH");
+    m.edit("AH");
+    r.edit("aHHHHHHHH");
+    n.edit("ah");
+    m.edit("OHH");
+    n.edit("OHHHHHHH");
+    s.edit("aH");
+    m.edit("OhOhOhOhOhOHOHHO");
+    n.edit("aH");
+    r.edit("ah");
+    m.edit("Ah");
+    n.edit("AH");
+    t.edit("HOHOHOHOHO");
   
   }
     if(command === "erdem") { 

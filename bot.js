@@ -137,18 +137,18 @@ client.on("message", async message => {
     t.edit("HOHOHOHOHO");
   
   }
-    if(command === "erdem") { 
+    if(command === "vaqum") { 
     const m = await message.channel.send(":regional_indicator_s:");
     m.edit(":regional_indicator_s: :regional_indicator_a:");
     m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k:");
     m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a:");
     m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:");
     m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:  ");
-    m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:           :regional_indicator_e:");
-    m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:           :regional_indicator_e: :regional_indicator_r:");
-    m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:           :regional_indicator_e: :regional_indicator_r: :regional_indicator_d:");
-    m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:           :regional_indicator_e: :regional_indicator_r: :regional_indicator_d: :regional_indicator_e:");
-    m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:           :regional_indicator_e: :regional_indicator_r: :regional_indicator_d: :regional_indicator_e: :regional_indicator_m:");
+    m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:           :regional_indicator_v:");
+    m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:           :regional_indicator_v: :regional_indicator_a:");
+    m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:           :regional_indicator_v: :regional_indicator_a: :regional_indicator_q:");
+    m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:           :regional_indicator_v: :regional_indicator_a: :regional_indicator_q: :regional_indicator_u:");
+    m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:           :regional_indicator_v: :regional_indicator_a: :regional_indicator_q: :regional_indicator_u: :regional_indicator_m:");
     }
     if(command === "dank") { 
     message.channel.send("https://i.hizliresim.com/Z9Bqmg.png");

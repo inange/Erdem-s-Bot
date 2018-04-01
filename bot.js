@@ -99,6 +99,18 @@ client.on("message", async message => {
     m.edit("Ah");
     m.edit("AH");
     m.edit("aH");
+    m.edit("AH");
+    m.edit("aHHHHHHHH");
+    m.edit("ah");
+    m.edit("OHH");
+    m.edit("OHHHHHHH");
+    m.edit("aH");
+    m.edit("OhOhOhOhOhOHOHHO");
+    m.edit("aH");
+    m.edit("ah");
+    m.edit("Ah");
+    m.edit("AH");
+    m.edit("HOHOHOHOHO");
   
   }
     if(command === "erdem") { 

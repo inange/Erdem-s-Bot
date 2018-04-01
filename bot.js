@@ -35,7 +35,7 @@ client.on("message", async message => {
   if(message.content.indexOf(config.prefix) !== 0) return;
   
 
-  const args = message.content.slice(config.prefix.length).trim().split(/ +-/g);
+  const args = message.content.slice(config.prefix.length).trim().split(/ ++/g);
   const command = args.shift().toLowerCase();
   
 
@@ -48,27 +48,37 @@ client.on("message", async message => {
   if(command === "help") {
   message.channel.send("++soyle (mesajiniz)");
   message.channel.send("++sevap");
-  message.channel.send("++dank");
-  message.channel.send("++komikmi");
-  message.channel.send("++chatitemizle (2-100 arası sayı) (chati temizler)");
+  message.channel.send("++kurucu");
+  message.channel.send("++leo");
+  message.channel.send("++erdem (erdem bilgi)");
+  message.channel.send("++ct (2-100 arası sayı) (chati temizler)");
   message.channel.send("++help");
   }
+  if(command === "06vaqumxd") {
+  message.channel.send("Bu Bot Erdem için Vaqum Tarafından yazılmıştır");
+  message.channel.send("Erdem Ödemeyi Lahmacun ile yapmıştır");
+  }
+  if(command === "erdem") {
+  message.channel.send("<------------------------------------------>");
+  message.channel.send("Erdem : Revona Sunucularının Tek Ve Has Kurucusu");
+  message.channel.send("https://bit.ly/2GsXq3u                          ");
+  message.channel.send("<------------------------------------------>");
+  }
   if(command === "selamla") {
-  message.channel.send("--------------------------------------------");
+  message.channel.send("<------------------------------------------>");
   message.channel.send("                                         ");
   message.channel.send("                                         ");
-  message.channel.send(`@${message.author.tag} HERKESI SELAMLIYOR`);
+  message.channel.send(`${message.author.tag} HERKESI SELAMLIYOR`);
   message.channel.send("                                         ");
   message.channel.send("                                         ");
-  message.channel.send("--------------------------------------------");
+  message.channel.send("<------------------------------------------>");
   }
    if(command === "soyle") {
-    // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
-    // To get the "message" itself we join the `args` back into a string with spaces: 
+
     const sayMessage = args.join(" ");
-    // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
+   
     message.delete().catch(O_o=>{}); 
-    // And we get the bot to say the thing: 
+  
     message.channel.send(sayMessage);
   }
   if(command === "sevap") { 
@@ -152,13 +162,13 @@ client.on("message", async message => {
     }
    if(command === "misa") { 
     const m = await message.channel.send(":regional_indicator_o:");
-    m.edit(":regional_indicator_s: :regional_indicator_c:");
+    m.edit(":regional_indicator_o: :regional_indicator_c:");
    }
-    if(command === "dank") { 
-    message.channel.send("https://i.hizliresim.com/Z9Bqmg.png");
+    if(command === "kurucu") { 
+    message.channel.send(":regional_indicator_e: :regional_indicator_r: :regional_indicator_d: :regional_indicator_e: :regional_indicator_m:");
   }
-    if(command === "komikmi") { 
-    message.channel.send("https://i.hizliresim.com/YgLyvl.png");
+    if(command === "leo") { 
+    message.channel.send("Leo : erdemin yancısı");
   }
   
   
@@ -204,16 +214,14 @@ client.on("message", async message => {
   }
   
 if(command === "ct") {
-    // This command removes all messages from all users in the channel, up to 100.
     
-    // get the delete count, as an actual number.
     const deleteCount = parseInt(args[0], 10);
     
-    // Ooooh nice, combined conditions. <3
+    
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)
       return message.reply("2 ile 100 arası bir sayı gir !");
     
-    // So we get our messages, and delete them. Simple enough, right?
+   
     const fetched = await message.channel.fetchMessages({count: deleteCount});
     message.channel.bulkDelete(fetched)
       .catch(error => message.reply(`Hata : ${error}`));

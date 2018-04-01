@@ -150,6 +150,10 @@ client.on("message", async message => {
     m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:           :regional_indicator_v: :regional_indicator_a: :regional_indicator_q: :regional_indicator_u:");
     m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:           :regional_indicator_v: :regional_indicator_a: :regional_indicator_q: :regional_indicator_u: :regional_indicator_m:");
     }
+   if(command === "misa") { 
+    const m = await message.channel.send(":regional_indicator_o:");
+    m.edit(":regional_indicator_s: :regional_indicator_c:");
+   }
     if(command === "dank") { 
     message.channel.send("https://i.hizliresim.com/Z9Bqmg.png");
   }

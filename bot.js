@@ -53,6 +53,15 @@ client.on("message", async message => {
   message.channel.send("++chatitemizle (2-100 arası sayı) (chati temizler)");
   message.channel.send("++help");
   }
+  if(command === "selamla") {
+  message.channel.send("----------------------------------------------");
+  message.channel.send("                                         ");
+  message.channel.send("                                         ");
+  message.channel.send(`${message.author.tag} HERKESI SELAMLIYOR`);
+  message.channel.send("                                         ");
+  message.channel.send("                                         ");
+  message.channel.send("----------------------------------------------");
+  }
   
   if(command === "soyle") {
    

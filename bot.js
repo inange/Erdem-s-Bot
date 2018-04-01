@@ -143,6 +143,7 @@ client.on("message", async message => {
     m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k:");
     m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a:");
     m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:");
+    m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:.");
     m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:       :regional_indicator_e:");
     m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:       :regional_indicator_e: :regional_indicator_r:");
     m.edit(":regional_indicator_s: :regional_indicator_a: :regional_indicator_k: :regional_indicator_a: :regional_indicator_t:       :regional_indicator_e: :regional_indicator_r: :regional_indicator_d:");

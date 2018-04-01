@@ -152,6 +152,14 @@ client.on("message", async message => {
     t.edit("HOHOHOHOHO");
   
   }
+ if(command === "enes") { 
+    const m = await message.channel.send(":regional_indicator_e:");
+    m.edit(":regional_indicator_e: :regional_indicator_n:");
+    m.edit(":regional_indicator_e: :regional_indicator_n: :regional_indicator_s:");
+    m.edit(":regional_indicator_e: :regional_indicator_n: :regional_indicator_s: :regional_indicator_e:");
+    m.edit(":regional_indicator_e: :regional_indicator_n: :regional_indicator_s: :regional_indicator_e: :regional_indicator_s:");
+    m.edit(":regional_indicator_e: :regional_indicator_n: :regional_indicator_s: :regional_indicator_e: :regional_indicator_s: :regional_indicator_t:");
+ }
     if(command === "vaqum") { 
     const m = await message.channel.send(":regional_indicator_s:");
     m.edit(":regional_indicator_s: :regional_indicator_a:");

@@ -81,6 +81,14 @@ client.on("message", async message => {
   m.edit("https://bit.ly/IqT6zt")
   m.edit("http://steamcommunity.com/profiles/76561198408528399/")
   }
+  if(command === "ulas") {
+  const p = await message.channel.send("ulaşıyom bekle ");
+  p.edit("ulaşıyom bekle.")
+  p.edit("ulaşıyom bekle..")
+  p.edit("ulaşıyom bekle...")
+  p.edit("ulaşıyom bekle..")
+  message.channel.send("ulaşamadım knk efso mizah :ok_hand: :joy: :e_: :f_: :s_: :o_: :m_: :i_: :z_: :a_: :h_: :a_: :m_: :k_:")
+  }
   if(command === "selamla") {
   message.channel.send("<------------------------------------------>");
   message.channel.send("                                         ");

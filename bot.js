@@ -87,7 +87,7 @@ client.on("message", async message => {
   p.edit("ulaşıyom bekle..")
   p.edit("ulaşıyom bekle...")
   p.edit("ulaşıyom bekle..")
-  message.channel.send("ulaşamadım knk :ok_hand: :joy: :regional_indicator_e: :regional_indicator_f: :regional_indicator_s: :regional_indicator_o: :regional_indicator_a: :regional_indicator_m: :regional_indicator_k: :ok_hand: :joy: :ok_hand: :joy: :ok_hand: :joy:")
+  p.edit("ulaşamadım knk :ok_hand: :joy: :regional_indicator_e: :regional_indicator_f: :regional_indicator_s: :regional_indicator_o: :regional_indicator_a: :regional_indicator_m: :regional_indicator_k: :ok_hand: :joy: :ok_hand: :joy: :ok_hand: :joy:")
   }
   if(command === "selamla") {
   message.channel.send("<------------------------------------------>");

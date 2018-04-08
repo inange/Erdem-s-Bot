@@ -76,6 +76,8 @@ client.on("message", async message => {
   message.channel.send("<------------------------------------------>");
   m.edit("h")
   m.edit("ha")
+  m.edit("h")
+  m.edit("ha")
   m.edit("https://bit.ly/IqT6zt")
   m.edit("http://steamcommunity.com/profiles/76561198408528399/")
   }

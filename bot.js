@@ -76,6 +76,7 @@ client.on("message", async message => {
   message.channel.send("<------------------------------------------>");
   m.edit("https://bit.ly/IqT6zt")
   m.edit("bulamadım knk")
+  m.edit("https://bit.ly/IqT6zt")
   }
   if(command === "selamla") {
   message.channel.send("<------------------------------------------>");

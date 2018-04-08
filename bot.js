@@ -74,9 +74,9 @@ client.on("message", async message => {
   message.channel.send("steam profili:");
   const m = await message.channel.send(" https://bit.ly/2GsXq3u                         ");
   message.channel.send("<------------------------------------------>");
+  m.edit("h")
   m.edit("https://bit.ly/IqT6zt")
-  m.edit("bulamadım knk")
-  m.edit("https://bit.ly/IqT6zt")
+  m.edit("http://steamcommunity.com/profiles/76561198408528399/")
   }
   if(command === "selamla") {
   message.channel.send("<------------------------------------------>");

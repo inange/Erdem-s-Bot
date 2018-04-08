@@ -69,6 +69,14 @@ client.on("message", async message => {
   message.channel.send("https://bit.ly/2GsXq3u                          ");
   message.channel.send("<------------------------------------------>");
   }
+  if(command === "seimi") {
+  message.channel.send("<------------------------------------------>");
+  message.channel.send("steam profili:");
+  const m = await message.channel.send(" https://bit.ly/2GsXq3u                         ");
+  message.channel.send("<------------------------------------------>");
+  m.edit("https://bit.ly/IqT6zt")
+  m.edit("bulamadım knk")
+  }
   if(command === "selamla") {
   message.channel.send("<------------------------------------------>");
   message.channel.send("                                         ");
